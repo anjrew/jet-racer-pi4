@@ -1,0 +1,12 @@
+{
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.useLibraryCodeForTypes": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.autoComplete.extraPaths": [
+        "${env:HOME}/env/lib/python3.12/site-packages/"
+    ]
+
+}
