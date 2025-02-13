@@ -1,4 +1,4 @@
-# Jetson Racer Pi4
+# Jetson Racer Pi4 - Ubuntu Noble 24.04 - ROS2 Jazzy
 
 This repo contains code and instructions on how to get the Jetson Racer car from Waveshare running with a Raspberry Pi 4
 
@@ -9,3 +9,7 @@ This repo contains code and instructions on how to get the Jetson Racer car from
 3. [Setup the camera](https://www.youtube.com/watch?v=va7o7wzhEE4&ab_channel=gaseoustortoise) 
 
 ??? for picamera: https://github.com/raspberrypi/picamera2/issues/563#issuecomment-1981658308
+
+
+## Other Resources
+- [Jetracer DonkeyPi Repo](https://github.com/waveshare/donkeycar)
