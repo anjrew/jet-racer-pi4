@@ -13,3 +13,4 @@ This repo contains code and instructions on how to get the Jetson Racer car from
 
 ## Other Resources
 - [Jetracer DonkeyPi Repo](https://github.com/waveshare/donkeycar)
+- [Jetracer DonkeyPi Wiki](https://www.waveshare.com/wiki/PiRacer_AI_Kit)
