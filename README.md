@@ -5,8 +5,13 @@ This repo contains code and instructions on how to get the Jetson Racer car from
 ## Setup instructions
 
 1. Install Ubuntu for Raspberry Pi is available [here](https://ubuntu.com/download/raspberry-pi).
-2. Once setup install through the debian packages by following these instructions [here](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html#id2)
-3. [Setup the camera](https://www.youtube.com/watch?v=va7o7wzhEE4&ab_channel=gaseoustortoise) 
+2. Once setup install through the debian packages for ROS by following these instructions [here](https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html#id2)
+3. [Setup the camera](https://www.youtube.com/watch?v=va7o7wzhEE4&ab_channel=gaseoustortoise)
+4. Follow the guide here to make a vitual environment for the project [here](https://docs.python.org/3/library/venv.html) 
+    a. `python3 -m venv venv`
+5. Activate the virtual environment (and every time in the project) by running the following command
+    a. `source venv/bin/activate`
+
 
 ??? for picamera: https://github.com/raspberrypi/picamera2/issues/563#issuecomment-1981658308
 
