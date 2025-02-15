@@ -1,0 +1,3 @@
+[submodule "src/pca9685"]
+	path = src/pca9685
+	url = git@github.com:anjrew/ros2-pca9685.git

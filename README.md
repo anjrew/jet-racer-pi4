@@ -21,7 +21,7 @@ sudo ./install.sh
 ```
 
 ??? for picamera: https://github.com/raspberrypi/picamera2/issues/563#issuecomment-1981658308
-
+7. Install any submodules with git submodule update --init --recursive
 
 ## Other Resources
 - [Jetracer DonkeyPi Repo](https://github.com/waveshare/donkeycar)
