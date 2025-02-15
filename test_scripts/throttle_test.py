@@ -1,5 +1,4 @@
 from typing import Optional
-import pigpio
 import time
 
 def map_range(x: float, X_min: float, X_max: float, Y_min: float, Y_max: float) -> float:
@@ -95,8 +94,6 @@ class PWMThrottle:
         
     def shutdown(self):
         self.run(0) #stop vehicle
-
-p = pigpio.pi()
 
 #THROTTLE
 THROTTLE_CHANNEL = 0            #channel on the 9685 pwm board 0-15
