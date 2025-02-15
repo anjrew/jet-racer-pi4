@@ -11,7 +11,14 @@ This repo contains code and instructions on how to get the Jetson Racer car from
     a. `python3 -m venv venv`
 5. Activate the virtual environment (and every time in the project) by running the following command
     a. `source venv/bin/activate`
-
+6. Install Service of OLED Display
+Use command belows to install service for OLED displaying. The OLED onboard can be used to display IP address, Voltage and current, etc.
+```bash
+cd ~
+git clone https://github.com/anjrew/pi-display-ubuntu-server-24.04.git
+cd pi-display
+sudo ./install.sh
+```
 
 ??? for picamera: https://github.com/raspberrypi/picamera2/issues/563#issuecomment-1981658308
 

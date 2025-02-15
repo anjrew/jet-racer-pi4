@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# This is a script that runs the input command after pulling the latest version of the code from the repository
+
+# Pull the latest version of the code from the repository of the current directory
+git pull
+
+# Run the input command with all arguments
+"$@"
