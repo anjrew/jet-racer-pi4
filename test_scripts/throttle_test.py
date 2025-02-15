@@ -103,8 +103,9 @@ THROTTLE_CHANNEL = 0            #channel on the 9685 pwm board 0-15
 THROTTLE_FORWARD_PWM = 4095      #pwm value for max forward throttle
 THROTTLE_STOPPED_PWM = 0      #pwm value for no movement
 THROTTLE_REVERSE_PWM = -4095      #pwm value for max reverse throttle
-THROTTLE_PCA9685_I2C_ADDR1 = = 0x60 #I2C address for the first set of 9685s
-throttle_controller = PCA9685(THROTTLE_CHANNEL, , frequency=1600, busnum=cfg.PCA9685_I2C_BUSNUM)
+THROTTLE_PCA9685_I2C_ADDR1 = 0x60 #I2C address for the first set of 9685s
+THROTTLE_PCA9685_BUSNUM = 1      #I2C bus number for the first set of 9685s 
+throttle_controller = PCA9685(THROTTLE_CHANNEL, THROTTLE_PCA9685_I2C_ADDR1, frequency=1600, busnum=THROTTLE_PCA9685_BUSNUM)
 
 throttle = PWMThrottle(controller=throttle_controller,
                             max_pulse=THROTTLE_FORWARD_PWM,
