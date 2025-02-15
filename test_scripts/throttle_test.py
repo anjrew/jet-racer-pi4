@@ -55,7 +55,7 @@ class PWMThrottle:
         min_pulse:int=-4095,
         zero_pulse:int=0):
 
-        self.controller = controller
+        self.controller: PCA9685 = controller
         self.max_pulse = max_pulse
         self.min_pulse = min_pulse
         self.zero_pulse = zero_pulse
@@ -68,9 +68,9 @@ class PWMThrottle:
 
     def run(self, throttle: float):
         if throttle > 0:
-            pulse = map_range(throttle,
+            pulse = int(map_range(throttle,
                                     0, self.MAX_THROTTLE, 
-                                    self.zero_pulse, self.max_pulse)
+                                    self.zero_pulse, self.max_pulse))
             self.controller.pwm.set_pwm(self.controller.channel,0,pulse)
             self.controller.pwm.set_pwm(self.controller.channel+1,0,4095)
             self.controller.pwm.set_pwm(self.controller.channel+2,0,0)
