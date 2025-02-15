@@ -108,3 +108,5 @@ throttle = PWMThrottle(controller=throttle_controller,
                             max_pulse=THROTTLE_FORWARD_PWM,
                             zero_pulse=THROTTLE_STOPPED_PWM, 
                             min_pulse=THROTTLE_REVERSE_PWM)
+
+throttle.run(0.5)
