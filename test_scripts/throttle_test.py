@@ -71,6 +71,7 @@ class PWMThrottle:
             pulse = int(map_range(throttle,
                                     0, self.MAX_THROTTLE, 
                                     self.zero_pulse, self.max_pulse))
+            print("Setting pulse" ,pulse)
             self.controller.pwm.set_pwm(self.controller.channel,0,pulse)
             self.controller.pwm.set_pwm(self.controller.channel+1,0,4095)
             self.controller.pwm.set_pwm(self.controller.channel+2,0,0)
